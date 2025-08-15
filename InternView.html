@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Launchpad</title>
+
+  <style>
+    /* Basic page setup with dark theme */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif; /* clean, readable font */
+      background: #121212; /* dark background */
+      color: #f1f1f1; /* light text for contrast */
+    }
+
+    /* Header section with gradient */
+    header {
+      padding: 30px;
+      text-align: center;
+      background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    }
+
+    /* Navigation bar styling */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #1f1f1f;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #00f2fe;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-bottom: 2px solid transparent;
+      transition: border 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover,
+    nav a.active {
+      border-color: #00f2fe;
+    }
+
+    /* Sections hidden by default */
+    .section {
+      display: none;
+      padding: 40px 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    /* Grid layout for cards */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Individual card styling */
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 255, 255, 0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #00ffc6;
+    }
+
+    h2 {
+      color: #00ffc6;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.6em;
+    }
+
+    a {
+      color: #00f2fe;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00ffc6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      background: #1a1a1a;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚀 InternView</h1>
+  <!-- Intro message for visitors -->
+  <p>Many students can't afford costly learning. This platform helps you gain experience and skills for free!</p>
+  <p><strong>Hello Friends!</strong></p>
+  <p>Technology is moving fast. Skills matter more than ever. The earlier you start, the better your future.</p>
+</header>
+
+<!-- Main navigation menu -->
+<nav>
+  <a onclick="showSection('overview')" class="active">Overview</a>
+  <a onclick="showSection('resources')">Resources</a>
+  <a onclick="showSection('prep')">Preparation</a>
+</nav>
+
+<!-- Overview section -->
+<section class="section active" id="overview">
+  <h2>📘 What Are Unpaid Internships?</h2>
+  <p>Unpaid internships offer hands-on experience without monetary compensation. They let students build portfolios and connect with professionals.</p>
+
+  <h2>💡 Why They Matter</h2>
+  <ul>
+    <li>Work with professional tools and teams</li>
+    <li>Build confidence through real-world tasks</li>
+    <li>Strengthen your resume and career path</li>
+    <li>Access roles even with limited resources</li>
+  </ul>
+
+  <h2>🌱 Who Offers Them?</h2>
+  <ul>
+    <li><strong>Startups:</strong> Tech, design, digital marketing</li>
+    <li><strong>NGOs:</strong> Volunteering, outreach, media</li>
+    <li><strong>Research Labs:</strong> Data, AI, social sciences</li>
+    <li><strong>Education Platforms:</strong> Teaching and curriculum support</li>
+  </ul>
+
+  <h2>🏆 Advantages</h2>
+  <ul>
+    <li>Learn online at your place</li>
+    <li>No strict deadlines</li>
+    <li>Build professional connections</li>
+    <li>Gain skills not taught in college</li>
+    <li>Enhance your resume</li>
+    <li>Explore different roles and industries</li>
+  </ul>
+
+  <h2>📌 Summary</h2>
+  <!-- Quick summary for readers -->
+  <p>Unpaid internships give students valuable experience, skill growth, and exposure — all without pay. They bridge the gap between classroom learning and practical work. Even with financial constraints, these opportunities improve resumes, professional connections, and career clarity. Many organizations provide mentorship, certifications, and sometimes job recommendations.</p>
+
+  <!-- TODO: Add testimonial section here in the future -->
+</section>
+
+<!-- Resources section -->
+<section class="section" id="resources">
+  <h2>🌐 Free Learning Platforms</h2>
+  <div class="card-grid">
+    <!-- Each card links to a free learning resource -->
+    <div class="card"><h3><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></h3><p>Learn coding step by step</p></div>
+    <div class="card"><h3><a href="https://www.mindluster.com/" target="_blank">Mind Luster</a></h3><p>Upskill anytime</p></div>
+    <div class="card"><h3><a href="https://infyspringboard.onwingspan.com/web/en/login" target="_blank">Infosys Springboard</a></h3><p>Courses + career prep</p></div>
+    <div class="card"><h3><a href="https://cursa.app/en" target="_blank">Cursa</a></h3><p>Quick microlearning</p></div>
+    <div class="card"><h3><a href="https://quickref.me/" target="_blank">QuickRef</a></h3><p>Code reference & practice</p></div>
+    <div class="card"><h3><a href="https://play.google.com/store/apps/details?id=com.lms.greatlakes" target="_blank">Great Learning</a></h3><p>Download from Playstore</p></div>
+  </div>
+
+  <!-- TODO: Add filter/search functionality later -->
+</section>
+
+<!-- Placement & prep section -->
+<section class="section" id="prep">
+  <h2>🧭 Placement & Interview Preparation</h2>
+  <ul>
+    <li><a href="https://www.indeed.com/career-advice/interviewing/interview-test" target="_blank">What is an Interview? – Indeed</a></li>
+    <li><a href="https://www.geeksforgeeks.org/company-preparation/" target="_blank">Company Prep – GeeksforGeeks</a></li>
+    <li><a href="https://www.geeksforgeeks.org/interview-experiences/placements-gq/" target="_blank">Interview Questions</a></li>
+    <li><a href="https://drive.google.com/drive/mobile/folders/1Fqr4QWLOkQm_XXRIXnmCfudfg5R5Q3uU" target="_blank">📂 Placement Material – Google Drive</a></li>
+    <li><a href="https://www.instagram.com/reel/DEkJSy5SuFW/" target="_blank">🎥 On-Campus Placement Roadmap</a></li>
+    <li><a href="https://zorcha.com/l/700d0f95?c=687a5db0d2e5638c391cd931&fbclid=PAQ0xDSwLnQzBleHRuA2FlbQIxMAABp3EEFlXyunM9kW3xQSdnKkoLNDV76NUbR3of16r_piq55EA16Lb2JVKjv764_aem_nP3Y4U1ltAEYtrAw_Y5ONA" target="_blank">🎯 Aptitude + Placement Master Guide</a></li>
+    <li><a href="https://drive.google.com/file/d/1HoUbT7bsD4-kE_-NMVqPwtXdcl9AD7ch/view?usp=drivesdk" target="_blank">CLICK HERE FOR GATE PREPARATION</a></li>
+  </ul>
+<!-- TODO: Maybe add section on mock interviews -->
+</section>
+
+<footer>
+   © 2025 IDEAL Project • Created for students, by students ❤️
+</footer>
+
+<script>
+  // Show the selected section and highlight the active nav link
+  function showSection(id) {
+    const sections = document.querySelectorAll('.section');
+    const links = document.querySelectorAll('nav a');
+    sections.forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    links.forEach(link => link.classList.remove('active'));
+    event.target.classList.add('active'); // highlight clicked link
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // scroll to top
+  }
+</script>
+
+</body>
+</html>
