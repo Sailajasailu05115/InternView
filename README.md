@@ -28,4 +28,4 @@ Include internship reviews and ratings
 Mobile-friendly app version
 ## 📜 License
 This project is released under the **MIT License** – feel free to use and adapt it.
-© 2025 InternView • From campus to career
+## © 2025 InternView • From campus to career
